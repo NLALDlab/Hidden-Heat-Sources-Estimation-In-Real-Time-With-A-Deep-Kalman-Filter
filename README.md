@@ -16,3 +16,9 @@ in our experiments, the 2-D domain has been divided in 5 slices, each with its o
 This results is due to the possibility to measure the final temperature field with a bigger extent than the measurement points used during the process evolution. This is clear by comparison with the following Figure, where the parameter $\lambda_N$ in the DKF loss-function, which controls the weight of the final temperature field prediction error, is set to zero (in the previous Figure it was very high):
 
 <img src="./stima_forzante_p_VarMiON_ReLu_Penalty0_0_Penalty3_1e9.png" alt="fishy" class="bg-primary" width="1200px">
+
+Let us refer now to Sec. 4.2 of the article: the adoption of an analytical forward model of point-sources (assuming it is available) and the maximum principle, let the DKF to estimate the unknwown heat source term without an extended measurement of the final temperature field:
+
+<img src="./stima_forzante_f_est_no_VarMiON_ReLu_Penalty0_0_NNLS.png" alt="fishy" class="bg-primary" width="1200px">
+
+Here the major difficulty is the bad conditioning of the forward model, due to the diffusive nature of the process and the relatively small number of measurement points.
